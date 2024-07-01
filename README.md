@@ -38,7 +38,7 @@ lst2bin_iso.exe -nm image.lst
 
 Notes:
 
-If no argument is specified, defaults to make an .iso for DVD images or a .bin/cue for CD images (also regens EDC/ECC)
+If no argument is specified, defaults to make an .iso for DVD or a .bin/cue for CD images (also regens EDC/ECC)
 
 .000 files are only supported for CD images and defaults to an .bin/cue file (also regens EDC/ECC)
 
