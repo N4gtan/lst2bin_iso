@@ -5,7 +5,7 @@ This code was initially based on the one from user "Cut Into Fourteen Pieces" at
 
 Pre-compiled releases of this code can be downloaded from here:
 
-https://github.com/bkragnarok/lst2bin_iso/releases/latest
+https://github.com/N4gtan/lst2bin_iso/releases/latest
 
 # Features
 This script can generate valid DVD (M1/2048) and CD (M2/2352) images from the .lst files that outputs CDVDREC.
