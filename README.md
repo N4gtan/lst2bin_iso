@@ -8,7 +8,7 @@ Pre-compiled releases of this code can be downloaded from here:
 https://github.com/bkragnarok/lst2bin_iso/releases/latest
 
 # Features
-This script can generate DVD and CD images from the .lst file that output CDVDREC and also generate the EDC/ECC.
+This script can generate valid DVD (M1/2048) and CD (M2/2352) images from the .lst files that outputs CDVDREC.
 
 Also it can regenerate or erease EDC/ECC from PSX/PS2 CD image files (.bin/img)
 
@@ -33,12 +33,12 @@ output_file      optional output file path
 
 Example:
 ```
-lst2bin_iso.exe -nm imagen.lst
+lst2bin_iso.exe -nm image.lst
 ```
 
 Notes:
 
-If no argument is specified, defaults to make an .iso for DVD .lst images or an .bin/cue for CD .lst image (also regens EDC/ECC)
+If no argument is specified, defaults to make an .iso for DVD images or a .bin/cue for CD images (also regens EDC/ECC)
 
 .000 files are only supported for CD images and defaults to an .bin/cue file (also regens EDC/ECC)
 
