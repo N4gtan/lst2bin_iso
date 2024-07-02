@@ -1,7 +1,7 @@
 # lst2bin_iso
 Converts the images created from the CDVDGEN tool (CDVDREC) into normal .bin/iso images
 
-This code was initially based on the one from user "Cut Into Fourteen Pieces" at https://www.obscuregamers.com/threads/how-to-create-a-working-playstation-2-master-cd-r-or-dvd-r-image.772/post-17636.html
+This code was initially based on the one from the user "Cut Into Fourteen Pieces" at https://www.obscuregamers.com/threads/how-to-create-a-working-playstation-2-master-cd-r-or-dvd-r-image.772/post-17636.html, but with lots of modifications
 
 Pre-compiled releases of this code can be downloaded from here:
 
