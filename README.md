@@ -21,14 +21,14 @@ Or you can simply drag and drop a supported file type into the executable file
 ## Commands:
 Required:
 ```
-input_file       supported files .lst/000/bin/img
+input_file          supported files .lst/000/bin/img
 ```
 Optionals:
 ```
-output_file      optional output file path
--nm, --nomaster  zeroes master disc sectors
--nf2, --noform2  zeroes form2 EDC and regens form1 EDC/ECC
--b, --blank      zeroes form1 and form2 EDC/ECC
+output_file         optional output file path
+-km, --keepmaster   keeps master disc sectors data
+-nf2, --noform2     zeroes form2 EDC and regens form1 EDC/ECC
+-b, --blank         zeroes form1 and form2 EDC/ECC
 ```
 
 Example:

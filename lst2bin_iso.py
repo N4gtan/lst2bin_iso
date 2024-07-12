@@ -87,7 +87,7 @@ if __name__=='__main__':
 		formatter_class=argparse.RawTextHelpFormatter)
 	parser.add_argument('input_file', help=f'supported files .lst/000/bin/img (can drag and drop into {Path(sys.argv[0]).name})')
 	parser.add_argument('output_file', nargs='?', help='optional output file path')
-	parser.add_argument('-nm', '--nomaster', action='store_true', help='zeroes master disc sectors')
+	parser.add_argument('-km', '--keepmaster', action='store_true', help='keeps master disc sectors data')
 	parser.add_argument('-nf2', '--noform2', action='store_true', help='zeroes form2 EDC and regens form1 EDC/ECC')
 	parser.add_argument('-b', '--blank', action='store_true', help='zeroes form1 and form2 EDC/ECC')
 
@@ -119,7 +119,7 @@ if __name__=='__main__':
 				with open(filename, 'rb') as infile:
 					shutil.copyfileobj(infile, output)
 				pbar.update(1)
-		if args.nomaster: # zeroes master disc sectors
+		if not args.keepmaster: # zeroes master disc sectors
 			no_master(0x7000, 2048)
 		sys.exit()
 	elif MEDIA_TYPE == 'CD' or INPUT_FILE[-4:] == '.000': # input .lst CD or .000
@@ -152,7 +152,7 @@ if __name__=='__main__':
 			data = CRC(subheader, input.read(2328))
 			output.write(SYNC_BLOCK + header + subheader + data)
 			pbar.update(1)
-	if args.nomaster: # zeroes master disc sectors
+	if not args.keepmaster: # zeroes master disc sectors
 		no_master(0x80A0, 2328)
 
 	if OUTPUT_FILE.upper().endswith('.BIN'):
